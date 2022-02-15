@@ -78,5 +78,6 @@
 #import "DynamicSwitchingLayoutController.h"
 #import "InfoInputViewController.h"
 #import "SkeletonScreenController.h"
+#import "CarouselViewController.h"
 
 #endif /* ControllersHeader_h */

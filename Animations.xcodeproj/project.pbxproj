@@ -256,6 +256,8 @@
 		10EFE2051D015FA500159779 /* DefaultNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 10EFE2041D015FA500159779 /* DefaultNotificationCenter.m */; };
 		10EFE2121D01874900159779 /* SpringScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10EFE2111D01874900159779 /* SpringScaleViewController.m */; };
 		10FDF9CC1CA50AED00871B45 /* UIView+AnimationsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FDF9CB1CA50AED00871B45 /* UIView+AnimationsListViewController.m */; };
+		B4A30D3B27BA468E003A9DC0 /* CarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A30D3A27BA468E003A9DC0 /* CarouselView.m */; };
+		B4A30D3E27BA4CF5003A9DC0 /* CarouselViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A30D3D27BA4CF5003A9DC0 /* CarouselViewController.m */; };
 		B5D0118E1C0BE1B30075BC2E /* HeaderViewTapAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D0118D1C0BE1B30075BC2E /* HeaderViewTapAnimationController.m */; };
 		B5D011941C0BE2410075BC2E /* RotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D011901C0BE2410075BC2E /* RotateView.m */; };
 		B5D011951C0BE2410075BC2E /* UIView+RotateAnimationProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D011931C0BE2410075BC2E /* UIView+RotateAnimationProtocol.m */; };
@@ -1131,6 +1133,10 @@
 		10EFE2111D01874900159779 /* SpringScaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpringScaleViewController.m; sourceTree = "<group>"; };
 		10FDF9CA1CA50AED00871B45 /* UIView+AnimationsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AnimationsListViewController.h"; sourceTree = "<group>"; };
 		10FDF9CB1CA50AED00871B45 /* UIView+AnimationsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnimationsListViewController.m"; sourceTree = "<group>"; };
+		B4A30D3927BA468E003A9DC0 /* CarouselView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarouselView.h; sourceTree = "<group>"; };
+		B4A30D3A27BA468E003A9DC0 /* CarouselView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarouselView.m; sourceTree = "<group>"; };
+		B4A30D3C27BA4CF5003A9DC0 /* CarouselViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarouselViewController.h; sourceTree = "<group>"; };
+		B4A30D3D27BA4CF5003A9DC0 /* CarouselViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarouselViewController.m; sourceTree = "<group>"; };
 		B5D0118C1C0BE1B30075BC2E /* HeaderViewTapAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderViewTapAnimationController.h; sourceTree = "<group>"; };
 		B5D0118D1C0BE1B30075BC2E /* HeaderViewTapAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderViewTapAnimationController.m; sourceTree = "<group>"; };
 		B5D0118F1C0BE2410075BC2E /* RotateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateView.h; sourceTree = "<group>"; };
@@ -2653,6 +2659,7 @@
 		10381FC71BF9CC2200E5E476 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B4A30D3827BA464E003A9DC0 /* CarouselView */,
 				10381FC61BF9CC0900E5E476 /* ButtonPressViewController */,
 				C5A7A46D249CBEE20069D463 /* SkeletonScreenController */,
 				104F0CC21BFABFED00C46E6A /* PopStrokeController */,
@@ -3659,6 +3666,17 @@
 				C5D0ABBD1FC66B65006BACFB /* NotificationEvent.m */,
 			);
 			name = "Disposable-Tools";
+			sourceTree = "<group>";
+		};
+		B4A30D3827BA464E003A9DC0 /* CarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				B4A30D3927BA468E003A9DC0 /* CarouselView.h */,
+				B4A30D3A27BA468E003A9DC0 /* CarouselView.m */,
+				B4A30D3C27BA4CF5003A9DC0 /* CarouselViewController.h */,
+				B4A30D3D27BA4CF5003A9DC0 /* CarouselViewController.m */,
+			);
+			name = CarouselView;
 			sourceTree = "<group>";
 		};
 		B5D0118B1C0BE15A0075BC2E /* HeaderViewTapAnimationController */ = {
@@ -5140,12 +5158,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1030;
-				ORGANIZATIONNAME = YouXianMing;
+				ORGANIZATIONNAME = parker;
 				TargetAttributes = {
 					10381F4C1BF9B44A00E5E476 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 538CZ4N2AQ;
 						LastSwiftMigration = 0920;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -5442,6 +5461,7 @@
 				C57791F61FCD3E0F00BED2B1 /* CompanyNameChain.m in Sources */,
 				C5966F76249A43FD0001E89B /* SDWebImageDownloaderRequestModifier.m in Sources */,
 				C5C5AFE01DD558F900F35EB8 /* IrregularGridViewController.m in Sources */,
+				B4A30D3B27BA468E003A9DC0 /* CarouselView.m in Sources */,
 				C57526CA1D5032690064F6CD /* CustomDrawingView.m in Sources */,
 				C52A3CCE1F67C73D00C2F862 /* PickerCityView.m in Sources */,
 				104326641C4B172F0033CEC0 /* ProgressColor.m in Sources */,
@@ -5776,6 +5796,7 @@
 				10381FE21BF9DE6E00E5E476 /* GCDTimer.m in Sources */,
 				109D5B4C1C0EC0700039CB04 /* CountDownTimerController.m in Sources */,
 				C5F75D3120EE29E30078FB74 /* UIViewController+RuntimeReplace.m in Sources */,
+				B4A30D3E27BA4CF5003A9DC0 /* CarouselViewController.m in Sources */,
 				102ED87A1C3C005800E9863E /* MixedColorProgressViewController.m in Sources */,
 				C51677971D363E6F0032AC09 /* Base64.m in Sources */,
 				C5966F42249A43FC0001E89B /* SDWebImageOperation.m in Sources */,
@@ -5915,8 +5936,8 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 538CZ4N2AQ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Animations.pch";
 				INFOPLIST_FILE = Animations/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -5939,8 +5960,8 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 538CZ4N2AQ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Animations.pch";
 				INFOPLIST_FILE = Animations/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
